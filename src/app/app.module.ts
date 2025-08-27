@@ -11,6 +11,8 @@ import { HeaderComponent } from './header/header.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UserComponent } from './user/user.component';
 import { CouserDetailsComponent } from './couser-details/couser-details.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { CouserDetailsComponent } from './couser-details/couser-details.componen
     HeaderComponent,
     PageNotFoundComponent,
     UserComponent,
-    CouserDetailsComponent
+    CouserDetailsComponent,
+    ProfileComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

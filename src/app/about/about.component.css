@@ -1,0 +1,80 @@
+/* Page title */
+.page-title {
+  text-align: center;
+  color: #7a2e2e;          /* brown-ish */
+  margin: 24px 0 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Navigation bar */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  background: linear-gradient(180deg, #fff, #f9f6f1); /* light warm background */
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  max-width: 720px;
+  margin: 0 auto 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+/* Nav links */
+.nav a {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  transition: all 200ms ease;
+  background: #f5e6da;   /* soft beige */
+  color: #444;           /* dark text */
+}
+
+/* Hover / focus */
+.nav a:hover,
+.nav a:focus {
+  background: #e2cbb3;   /* slightly darker beige */
+  color: #2d2d2d;        /* deeper text color */
+  border-color: #c5a27c; /* warm border */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  outline: none;
+}
+
+/* Active route (via routerLinkActive="active") */
+.nav a.active {
+  background: #7a2e2e;   /* brown */
+  color: #fff;           /* white text for contrast */
+  border-color: #7a2e2e;
+  box-shadow: 0 6px 16px rgba(122,46,46,0.25);
+}
+
+/* Content area */
+.content {
+  max-width: 720px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .nav {
+    gap: 10px;
+    padding: 10px;
+  }
+  .nav a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  .content {
+    padding: 16px;
+  }
+}

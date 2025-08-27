@@ -1,1 +1,10 @@
-<h2 style="text-align: center; color: brown;">About Component</h2>
+<h2 class="page-title">About Component</h2>
+
+<nav class="nav">
+  <a routerLink="profile" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Profile</a>
+  <a routerLink="login" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Login</a>
+</nav>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
