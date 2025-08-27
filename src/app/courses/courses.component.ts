@@ -24,6 +24,14 @@ export class CoursesComponent {
       id:4,
       coursename:"Mathemathics",
     },
+    {
+      id:5,
+      coursename:"Physics",
+    },
+    {
+      id:6,
+      coursename:"Database Management",
+    },
 
   ]
 
