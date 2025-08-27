@@ -1,0 +1,41 @@
+/* পুরো user list এর জন্য */
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* প্রতিটি list item */
+.user-list li {
+  margin: 8px 0;
+}
+
+/* লিঙ্ক স্টাইল */
+.user-list li a {
+  display: block;
+  text-decoration: none;
+  background: #f5f5f5;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 6vw;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* hover effect */
+.user-list li a:hover {
+  background: #00bcd4;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* active link */
+.user-list li a.active {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+}

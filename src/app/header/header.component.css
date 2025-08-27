@@ -1,0 +1,70 @@
+/* Navbar container */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+/* Navbar list */
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* ছোট স্ক্রিনে লাইন ভাঙবে */
+}
+
+/* Navbar items */
+.navbar ul li {
+  margin: 0 15px;
+}
+
+/* Navbar links */
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  display: block;
+}
+
+/* Hover effect */
+.navbar ul li a:hover {
+  background-color: #575757;
+  color: #00bcd4; /* সুন্দর cyan/sky blue */
+}
+
+
+/* Active link */
+.navbar ul li a.active {
+  background-color: rgb(126, 120, 111);
+  color: #333;
+  font-weight: bold;
+}
+
+/* ✅ Responsive design */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul li {
+    margin: 8px 0;
+  }
+
+  .navbar {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar ul li a {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%; /* মোবাইলে ফুল-উইডথ লিঙ্ক */
+  }
+}

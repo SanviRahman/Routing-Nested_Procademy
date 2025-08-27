@@ -1,0 +1,10 @@
+<h2 class="title">Courses Component</h2>
+
+<div class="card-container">
+  <div *ngFor="let course of courses" class="card">
+    <h3>{{ course.coursename }}</h3>
+    <a [routerLink]="['/course-details', course.id, course.coursename]" class="btn">
+      View Details
+    </a>
+  </div>
+</div>
