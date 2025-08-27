@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   {
+    //Nested Path
     path: 'about', component: AboutComponent, children: [
       { path: 'profile', component: ProfileComponent },
       { path: 'login', component: LoginComponent },
@@ -22,7 +23,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'courses', component: CoursesComponent },
   { path: 'user/:id/:name', component: UserComponent },
-  { path: 'course-details/:id/:coursename', component: CouserDetailsComponent },
+  { path: 'course-details/:id/:coursename/:courseprice', component: CouserDetailsComponent },
   { path: '**', component: PageNotFoundComponent },
 
 ];

@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CouserDetailsComponent {
   name: string = '';
   id: string = '';
+  price: string = '';
 
   constructor(private route: ActivatedRoute) { }
 
@@ -16,6 +17,7 @@ export class CouserDetailsComponent {
     this.route.params.subscribe((params) => {
       this.name = params['coursename'];
       this.id = params['id'];
+      this.price = params['courseprice'];
     })
   }
 }
