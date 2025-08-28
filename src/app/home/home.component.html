@@ -2,6 +2,6 @@
 
 <div *ngFor="let user of users">
     <ul class="user-list">
-        <li><a routerLink="user/{{ user.id }}/ {{ user.name }}">{{user.name}}</a></li>
+        <li><a [routerLink]="['/user',user.id,user.name]">{{user.name}}</a></li>
     </ul>
 </div>

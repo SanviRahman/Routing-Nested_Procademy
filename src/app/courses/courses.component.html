@@ -3,7 +3,7 @@
 <div class="card-container">
   <div *ngFor="let course of courses" class="card">
     <h3>{{ course.coursename }}</h3>
-    <a [routerLink]="['/course-details', course.id, course.coursename, course.courseprice]" class="btn">
+    <a [routerLink]="['/course-details', course.id, course.coursename,course.courseprice]" class="btn">
       View Details
     </a>
   </div>
