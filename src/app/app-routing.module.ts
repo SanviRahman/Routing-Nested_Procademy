@@ -14,8 +14,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   {
-    //Nested Path
     path: 'about', component: AboutComponent, children: [
+      //Nested path
       { path: 'profile', component: ProfileComponent },
       { path: 'login', component: LoginComponent },
     ]
